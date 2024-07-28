@@ -1,0 +1,134 @@
+[
+    {
+        "id": 100,
+        "image_location": "/100.jpg",
+        "text": "Continue",
+        "alttext": "To be continued Image"
+    },
+    {
+        "id": 101,
+        "image_location": "/101.jpeg",
+        "text": "Switching Protocols",
+        "alttext": "Switching Protocols Image"
+    },
+    {
+        "id": 102,
+        "image_location": "/102.jpg",
+        "text": "Processing",
+        "alttext": "Processing Image"
+    },
+    {
+        "id": 200,
+        "image_location": "/200.jpeg",
+        "text": "OK",
+        "alttext": "OK Image"
+    },
+    {
+        "id": 201,
+        "image_location": "/201.jpg",
+        "text": "Created",
+        "alttext": "Created Image"
+    },
+    {
+        "id": 202,
+        "image_location": "/202.jpeg",
+        "text": "Accepted",
+        "alttext": "Accepted Image"
+    },
+    {
+        "id": 204,
+        "image_location": "/204.jpg",
+        "text": "No content",
+        "alttext": "No content Image"
+    },
+    {
+        "id": 300,
+        "image_location": "/300.jpeg",
+        "text": "Multiple Choices",
+        "alttext": "Multiple Choices Image"
+    },
+    {
+        "id": 302,
+        "image_location": "/302.jpg",
+        "text": "Found",
+        "alttext": "Found Image"
+    },
+    {
+        "id": 304,
+        "image_location": "/304.jpeg",
+        "text": "Not Modified",
+        "alttext": "Not Modified Image"
+    },
+    {
+        "id": 305,
+        "image_location": "/305.jpeg",
+        "text": "Use Proxy",
+        "alttext": "Use Proxy Image"
+    },
+    {
+        "id": 400,
+        "image_location": "/400.jpg",
+        "text": "Bad Request",
+        "alttext": "Bad Request Image"
+    },
+    {
+        "id": 401,
+        "image_location": "/401.jpg",
+        "text": "Unauthorized",
+        "alttext": "Unauthorized Image"
+    },
+    {
+        "id": 402,
+        "image_location": "/402.jpg",
+        "text": "Payment Required",
+        "alttext": "Payment Required Image"
+    },
+    {
+        "id": 403,
+        "image_location": "/403.jpeg",
+        "text": "Forbidden",
+        "alttext": "Forbidden Image"
+    },
+    {
+        "id": 404,
+        "image_location": "/404.png",
+        "text": "Not Found",
+        "alttext": "Not Found Image"
+    },
+    {
+        "id": 418,
+        "image_location": "/418.jpg",
+        "text": "I'm a Teapot",
+        "alttext": "I'm a Teapot Image"
+    },
+    {
+        "id": 500,
+        "image_location": "/500.jpg",
+        "text": "Internal Server Error",
+        "alttext": "Internal Server Error Image"
+    },
+    {
+        "id": 501,
+        "image_location": "/501.jpg",
+        "text": "Not Implemented",
+        "alttext": "Not Implemented Image"
+    },
+    {
+        "id": 502,
+        "image_location": "/502.jpeg",
+        "text": "Bad Gateway",
+        "alttext": "Bad Gateway Image"
+    },
+    {
+        "id": 503,
+        "image_location": "/503.jpg",
+        "text": "Service Unavailable",
+        "alttext": "Service Unavailable Image"
+    },
+    {
+        "id": 504,
+        "image_location": "/504.jpeg",
+        "text": "Gateway Timeout",
+        "alttext": "Gateway Timeout Image"
+    }
+]
