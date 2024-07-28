@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const IndexPage = ({ params }) => {
   const { index } = params;
@@ -38,10 +39,20 @@ const IndexPage = ({ params }) => {
   }
 
   return (
-    <div>
-      <h1>{data.text}</h1>
-      <img src={data.image_location} alt={data.alttext} />
-      <p>{data.alttext}</p>
+    <div className="flex items-center justify-center min-h-screen p-8">
+      <div className="text-center ">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{data.text}</h1>
+        <div className="flex justify-center mb-4">
+          <Image
+            src={data.image_location}
+            alt={data.alttext}
+            width={500}
+            height={300}
+            className="rounded-lg shadow-md"
+          />
+        </div>
+        <p className="text-gray-600">{data.alttext}</p>
+      </div>
     </div>
   );
 };
