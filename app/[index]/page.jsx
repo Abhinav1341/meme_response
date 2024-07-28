@@ -10,17 +10,23 @@ const IndexPage = ({ params }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (!index) return;
-
     const fetchData = async () => {
       try {
-        const response = await fetch(`/api/${index}`);
-        const result = await response.json();
+        const response = await fetch("/data.json");
+        const predefinedData = await response.json();
 
-        if (response.ok) {
-          setData(result);
+        const entry = predefinedData.find(
+          (item) => item.id === parseInt(index)
+        );
+        if (!entry) {
+          const notFoundEntry = predefinedData.find((item) => item.id === 404);
+          if (notFoundEntry) {
+            setData(notFoundEntry);
+          } else {
+            setError("404 entry not found in data.json");
+          }
         } else {
-          setError(result.error);
+          setData(entry);
         }
       } catch (err) {
         setError("Error fetching data");
@@ -35,23 +41,28 @@ const IndexPage = ({ params }) => {
   }
 
   if (!data) {
-    return <div>Loading...</div>;
+    return (
+      <div className="text-gray-300 bg-gray-900 h-screen p-4 text-xl">
+        Loading...
+      </div>
+    );
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-8">
+    <div className="flex items-center justify-center min-h-screen p-8 bg-gray-900">
       <div className="text-center ">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4">{data.text}</h1>
-        <div className="flex justify-center mb-4">
+        <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 text-gray-200">
+          {data.id} : {data.text}
+        </h1>
+        <div className="flex justify-center mb-4 max-h-72 ">
           <Image
             src={data.image_location}
             alt={data.alttext}
-            width={500}
+            width={420}
             height={300}
             className="rounded-lg shadow-md"
           />
         </div>
-        <p className="text-gray-600">{data.alttext}</p>
       </div>
     </div>
   );
